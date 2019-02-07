@@ -1,42 +1,25 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## Remote APIs
 
-### Author: Student/Group Name
+### Author: Fletcher LaRue
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+* [repo](https://github.com/asdFletcher/33-remote-apis)
+* [code sandbox, official version](https://codesandbox.io/s/pm4po3j00j)
+* [code sandbox no-thunk version, not complete](https://codesandbox.io/s/74lyzrvq06)
 
-### Modules
-#### `modulename.js`
-##### Exported Values and Methods
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+### Description
 
-###### `bar(array) -> array`
-Usage Notes or examples
+The front end react redux application is linked to the star wars API.
 
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+State is stored in memory.
 
-#### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+There is initial state stored with a couple people.
 
-#### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+To update the list of people, there is a button to fetch a new list of 10 people from the Star Wars API (SWAPI)
 
-#### UML
-Link to an image of the UML for your application and response to events
+To view details on a person , click their name. This makes another API call if the person's detail information is not already stored. So successive calls to the same person's detail information will be quicker.
+
